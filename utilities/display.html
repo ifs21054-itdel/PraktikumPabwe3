@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootsrap 5 - Display</title>
+    <link
+      rel="stylesheet"
+      href="vendor/bootstrap-5.2.3-dist/css/bootstrap.min.css"
+    />
+    <style>
+      .mybox {
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="p-3">
+      <h3>Display Properties</h3>
+      <div style="width: 500px">
+        <p style="width: 100%" class="d-inline bg-black text-white">
+          Ini adalah display inline pada paragraf dengan width 100%
+        </p>
+        <p style="width: 100%" class="d-inline-block bg-black text-white">
+          Ini adalah display inline-block pada paragraf dengan width 100%
+        </p>
+        <p class="d-block bg-black text-white">
+          Ini adalah display block pada paragraf
+        </p>
+      </div>
+      <h3>Display Flex</h3>
+      <div class="d-flex gap-2">
+        <div class="mybox border border-3"></div>
+        <div class="mybox border border-3"></div>
+        <div class="mybox border border-3"></div>
+        <div class="mybox border border-3"></div>
+        <div class="mybox border border-3"></div>
+        <div class="mybox border border-3"></div>
+      </div>
+      <h3>Display Grid</h3>
+      <div class="d-grid gap-2" style="grid-template-columns: 50px 50px 50px">
+        <div class="mybox border border-3"></div>
+        <div class="mybox border border-3"></div>
+        <div class="mybox border border-3"></div>
+        <div class="mybox border border-3"></div>
+        <div class="mybox border border-3"></div>
+        <div class="mybox border border-3"></div>
+      </div>
+    </div>
+  </body>
+</html>

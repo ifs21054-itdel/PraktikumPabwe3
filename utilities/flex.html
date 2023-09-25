@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5 - Flexbox</title>
+
+    <link
+      rel="stylesheet"
+      href="vendor/bootstrap-5.2.3-dist/css/bootstrap.min.css"
+    />
+
+    <style>
+      .mybox {
+        width: 50px;
+        height: 50px;
+        background-color: lightskyblue;
+      }
+
+      .w-200px {
+        width: 200px;
+      }
+
+      .h-120px {
+        height: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="p-3">
+      <h3>Display Flex</h3>
+      <div class="border border-2 border-danger w-200px">
+        <div class="d-flex">
+          <div class="mybox border">1</div>
+          <div class="mybox border">2</div>
+          <div class="mybox border">3</div>
+          <div class="mybox border">4</div>
+          <div class="mybox border">5</div>
+          <div class="mybox border">6</div>
+        </div>
+      </div>
+
+      <h3>Flex Order</h3>
+      <div class="border border-2 border-danger w-200px">
+        <div class="d-flex">
+          <div class="mybox border order-last">1</div>
+          <div class="mybox border order-5">2</div>
+          <div class="mybox border order-2">3</div>
+          <div class="mybox border order-4">4</div>
+          <div class="mybox border order-0">5</div>
+          <div class="mybox border order-forst">6</div>
+        </div>
+      </div>
+
+      <h3>Flex Wrap</h3>
+      <div class="border border-2 border-danger w-200px">
+        <div class="d-flex flex-wrap">
+          <div class="mybox border">1</div>
+          <div class="mybox border">2</div>
+          <div class="mybox border">3</div>
+          <div class="mybox border">4</div>
+          <div class="mybox border">5</div>
+          <div class="mybox border">6</div>
+        </div>
+      </div>
+
+      <h3>Flex Direction Row</h3>
+      <div class="border border-2 border-danger w-200px">
+        <div class="d-flex flex-row">
+          <div class="mybox border">1</div>
+          <div class="mybox border">2</div>
+          <div class="mybox border">3</div>
+        </div>
+      </div>
+
+      <h3>Flex Direction Column</h3>
+      <div class="border border-2 border-danger w-200px">
+        <div class="d-flex flex-column">
+          <div class="mybox border">1</div>
+          <div class="mybox border">2</div>
+          <div class="mybox border">3</div>
+        </div>
+      </div>
+
+      <h3>Flex Direction Row Reverse</h3>
+      <div class="border border-2 border-danger w-200px">
+        <div class="d-flex flex-row-reverse">
+          <div class="mybox border">1</div>
+          <div class="mybox border">2</div>
+          <div class="mybox border">3</div>
+        </div>
+      </div>
+
+      <h3>Flex Direction Coumn Reverse</h3>
+      <div class="border border-2 border-danger w-200px">
+        <div class="d-flex flex-cokumn-reverse">
+          <div class="mybox border">1</div>
+          <div class="mybox border">2</div>
+          <div class="mybox border">3</div>
+        </div>
+      </div>
+
+      <h3>Justify Content Start</h3>
+      <div class="border border-2 border-danger w-200px">
+        <div class="d-flex justify-content-start">
+          <div class="mybox border">1</div>
+          <div class="mybox border">2</div>
+          <div class="mybox border">3</div>
+        </div>
+      </div>
+
+      <h3>Justify Content End</h3>
+      <div class="border border-2 border-danger w-200px">
+        <div class="d-flex justify-content-end">
+          <div class="mybox border">1</div>
+          <div class="mybox border">2</div>
+          <div class="mybox border">3</div>
+        </div>
+      </div>
+
+      <h3>Justify Content Center</h3>
+      <div class="border border-2 border-danger w-200px">
+        <div class="d-flex justify-content-center">
+          <div class="mybox border">1</div>
+          <div class="mybox border">2</div>
+          <div class="mybox border">3</div>
+        </div>
+      </div>
+
+      <h3>Justify Content Between</h3>
+      <div class="border border-2 border-danger w-200px">
+        <div class="d-flex justify-content-between">
+          <div class="mybox border">1</div>
+          <div class="mybox border">2</div>
+          <div class="mybox border">3</div>
+        </div>
+      </div>
+
+      <h3>Justify Content Around</h3>
+      <div class="border border-2 border-danger w-200px">
+        <div class="d-flex justify-content-around">
+          <div class="mybox border">1</div>
+          <div class="mybox border">2</div>
+          <div class="mybox border">3</div>
+        </div>
+      </div>
+
+      <h3>Justify Content Evenly</h3>
+      <div class="border border-2 border-danger w-200px">
+        <div class="d-flex justify-content-evenly">
+          <div class="mybox border">1</div>
+          <div class="mybox border">2</div>
+          <div class="mybox border">3</div>
+        </div>
+      </div>
+
+      <h3>Align Items Start</h3>
+      <div class="border border-2 border-danger w-200px">
+        <div class="d-flex align-items-start h-120px">
+          <div class="mybox border">1</div>
+          <div class="mybox border">2</div>
+          <div class="mybox border">3</div>
+        </div>
+      </div>
+
+      <h3>Align Items End</h3>
+      <div class="border border-2 border-danger w-200px">
+        <div class="d-flex align-items-end h-120px">
+          <div class="mybox border">1</div>
+          <div class="mybox border">2</div>
+          <div class="mybox border">3</div>
+        </div>
+      </div>
+
+      <h3>Align Items Center</h3>
+      <div class="border border-2 border-danger w-200px">
+        <div class="d-flex align-items-center h-120px">
+          <div class="mybox border">1</div>
+          <div class="mybox border">2</div>
+          <div class="mybox border">3</div>
+        </div>
+      </div>
+
+      <h3>Align Items Stretch</h3>
+      <div class="border border-2 border-danger w-200px">
+        <div class="d-flex align-items-stretch h-120px">
+          <div class="mybox border">1</div>
+          <div class="mybox border">2</div>
+          <div class="mybox border">3</div>
+        </div>
+      </div>
+
+      <h3>Align Self</h3>
+      <div class="border border-2 border-danger w-200px">
+        <div class="d-flex h-120px">
+          <div class="mybox border align-self-center">1</div>
+          <div class="mybox border align-self-stretch">2</div>
+          <div class="mybox border align-self-end">3</div>
+          <div class="mybox border align-self-start">4</div>
+        </div>
+      </div>
+
+      <h3>Align Content Start</h3>
+      <div class="border border-2 border-danger w-200px">
+        <div class="d-flex align-content-start flex-wrap h-120px">
+          <div class="mybox border">1</div>
+          <div class="mybox border">2</div>
+          <div class="mybox border">3</div>
+          <div class="mybox border">4</div>
+          <div class="mybox border">5</div>
+          <div class="mybox border">6</div>
+        </div>
+      </div>
+
+      <h3>Align Content End</h3>
+      <div class="border border-2 border-danger w-200px">
+        <div class="d-flex align-content-end flex-wrap h-120px">
+          <div class="mybox border">1</div>
+          <div class="mybox border">2</div>
+          <div class="mybox border">3</div>
+          <div class="mybox border">4</div>
+          <div class="mybox border">5</div>
+          <div class="mybox border">6</div>
+        </div>
+      </div>
+
+      <h3>Align Content Center</h3>
+      <div class="border border-2 border-danger w-200px">
+        <div class="d-flex align-content-center flex-wrap h-120px">
+          <div class="mybox border">1</div>
+          <div class="mybox border">2</div>
+          <div class="mybox border">3</div>
+          <div class="mybox border">4</div>
+          <div class="mybox border">5</div>
+          <div class="mybox border">6</div>
+        </div>
+      </div>
+
+      <h3>Align Content Between</h3>
+      <div class="border border-2 border-danger w-200px">
+        <div class="d-flex align-content-between flex-wrap h-120px">
+          <div class="mybox border">1</div>
+          <div class="mybox border">2</div>
+          <div class="mybox border">3</div>
+          <div class="mybox border">4</div>
+          <div class="mybox border">5</div>
+          <div class="mybox border">6</div>
+        </div>
+      </div>
+
+      <h3>Align Content Around</h3>
+      <div class="border border-2 border-danger w-200px">
+        <div class="d-flex align-content-around flex-wrap h-120px">
+          <div class="mybox border">1</div>
+          <div class="mybox border">2</div>
+          <div class="mybox border">3</div>
+          <div class="mybox border">4</div>
+          <div class="mybox border">5</div>
+          <div class="mybox border">6</div>
+        </div>
+      </div>
+
+      <h3>Align Content Stretch</h3>
+      <div class="border border-2 border-danger w-200px">
+        <div class="d-flex align-content-stretch flex-wrap h-120px">
+          <div class="mybox border">1</div>
+          <div class="mybox border">2</div>
+          <div class="mybox border">3</div>
+          <div class="mybox border">4</div>
+          <div class="mybox border">5</div>
+          <div class="mybox border">6</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

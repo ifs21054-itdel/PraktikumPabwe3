@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5 - Borders</title>
+    <link
+      rel="stylesheet"
+      href="vendor/bootstrap-5.2.3-dist/css/bootstrap.min.css"
+    />
+    <style>
+      .mybox {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        text-align: center;
+        line-height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="p-3">
+      <h3>Menambah Border</h3>
+      <div class="d-flex">
+        <div class="mybox border">Full</div>
+        <div class="mybox border-top">T</div>
+        <div class="mybox border-bottom">B</div>
+        <div class="mybox border-start">S</div>
+        <div class="mybox border-end">E</div>
+        <div class="mybox border-top border-bottom border-start border-end">
+          TBSE
+        </div>
+      </div>
+      <h3>Menghapus Border</h3>
+
+      <div class="d-flex">
+        <div class="mybox border border-top-0">T-0</div>
+        <div class="mybox border border-bottom-0">B-0</div>
+        <div class="mybox border border-start-0">S-0</div>
+        <div class="mybox border border-end-0">E-0</div>
+      </div>
+
+      <h3>Ketebalan Border</h3>
+      <div class="d-flex">
+        <div class="mybox border border-0">0</div>
+        <div class="mybox border border-1">1</div>
+        <div class="mybox border border-2">2</div>
+        <div class="mybox border border-3">3</div>
+        <div class="mybox border border-4">4</div>
+        <div class="mybox border border-5">5</div>
+      </div>
+
+      <h3>Warna Border</h3>
+      <div class="d-flex">
+        <div class="mybox border border-5 border-primary"></div>
+        <div class="mybox border border-5 border-secondary"></div>
+        <div class="mybox border border-5 border-success"></div>
+        <div class="mybox border border-5 border-danger"></div>
+        <div class="mybox border border-5 border-warning"></div>
+        <div class="mybox border border-5 border-primary"></div>
+        <div class="mybox border border-5 border-info"></div>
+        <div class="mybox border border-5 border-light"></div>
+        <div class="mybox border border-5 border-dark"></div>
+        <div class="mybox border border-5 border-white"></div>
+      </div>
+
+      <h3>Radius Border</h3>
+      <div class="d-flex">
+        <div class="mybox border border-dark rounded"></div>
+        <div class="mybox border border-dark rounded-top"></div>
+        <div class="mybox border border-dark rounded-bottom"></div>
+        <div class="mybox border border-dark rounded-start"></div>
+        <div class="mybox border border-dark rounded-end"></div>
+        <div class="mybox border border-dark rounded-circle"></div>
+        <div
+          style="width: 100px"
+          class="mybox border border-dark rounded-pill"
+        ></div>
+      </div>
+
+      <h3>Ketebalan Radius Border</h3>
+      <div class="d-flex">
+        <div class="mybox border border-dark rounded-0">0</div>
+        <div class="mybox border border-dark rounded-1">1</div>
+        <div class="mybox border border-dark rounded-2">2</div>
+        <div class="mybox border border-dark rounded-3">3</div>
+        <div class="mybox border border-dark rounded-4">4</div>
+        <div class="mybox border border-dark rounded-5">5</div>
+      </div>
+    </div>
+  </body>
+</html>
